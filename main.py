@@ -240,6 +240,7 @@ def main():
     Sets up the sidebar controls, fetches data, computes the panic index,
     and displays interactive charts.
     """
+    st.set_page_config(page_title="Crypto Sentiment Dashboard", layout="wide")
     # Page title
     st.title("📈 Crypto Panic Index Dashboard")
 
@@ -322,8 +323,7 @@ Reuses data-fetching & panic-index logic from Crypto_panic_index.py:
 
 import streamlit as st
 
-# 1) Must be the first Streamlit call
-st.set_page_config(page_title="Crypto Sentiment Dashboard", layout="wide")
+
 
 # Quick check that this file is actually loading
 st.write("Dashboard script loaded from:", __file__)
