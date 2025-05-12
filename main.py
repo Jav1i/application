@@ -31,8 +31,8 @@ st.set_page_config(page_title="Crypto Sentiment Dashboard", layout="wide")
 
 CRYPTOPANIC_TOKEN = st.secrets["CRYPTOPANIC_TOKEN"]
 REDDIT_CLIENT_ID = st.secrets["REDDIT_CLIENT_ID"]
-REDDIT_CLIENT_SECRET = st.secrets["TP20TCSIRxAvpNC_X6lHP6GYdCpTow"]
-REDDIT_USER_AGENT = "REDDIT_USER_AGENT"
+REDDIT_CLIENT_SECRET = st.secrets["REDDIT_CLIENT_SECRET"]
+REDDIT_USER_AGENT = st.secrets["REDDIT_USER_AGENT"]
 
 
 
