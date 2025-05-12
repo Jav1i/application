@@ -1,3 +1,4 @@
 pycoingecko
 vaderSentiment
 praw
+matplotlib
