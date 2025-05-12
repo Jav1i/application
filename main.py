@@ -27,12 +27,13 @@ import praw
 # This section is meant to be configured with specific API credentials depending on the user...
 
 # CryptoPanic API token:
-CRYPTOPANIC_TOKEN = "3f262f77f585323d84624c5f0721bdc6a63f58e3"
+st.set_page_config(page_title="Crypto Sentiment Dashboard", layout="wide")
 
-# Reddit API credentials:
-REDDIT_CLIENT_ID = "di0NEXnZ0rNLHEmwe2tyJw"
-REDDIT_CLIENT_SECRET = "TP20TCSIRxAvpNC_X6lHP6GYdCpTow"
-REDDIT_USER_AGENT = "crypto_panic_index_app_v1.0"
+CRYPTOPANIC_TOKEN = st.secrets["CRYPTOPANIC_TOKEN"]
+REDDIT_CLIENT_ID = st.secrets["REDDIT_CLIENT_ID"]
+REDDIT_CLIENT_SECRET = st.secrets["TP20TCSIRxAvpNC_X6lHP6GYdCpTow"]
+REDDIT_USER_AGENT = "REDDIT_USER_AGENT"
+
 
 
 # -----------------------------------------------------------------------------
@@ -240,7 +241,6 @@ def main():
     Sets up the sidebar controls, fetches data, computes the panic index,
     and displays interactive charts.
     """
-    st.set_page_config(page_title="Crypto Sentiment Dashboard", layout="wide")
     # Page title
     st.title("📈 Crypto Panic Index Dashboard")
 
